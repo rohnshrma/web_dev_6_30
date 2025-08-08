@@ -87,6 +87,55 @@
           </label>
         </div>
 
+        <div>
+          <label>
+            Comments :
+            <br />
+            <textarea
+              name="comments"
+              cols="30"
+              rows="10"
+              placeholder="Enter your comments"
+            ></textarea>
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Country :
+            <select name="country">
+              <option selected disabled>Select Country</option>
+              <option value="India">INDIA</option>
+              <option value="USA">USA</option>
+              <option value="China">CHINA</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            Profile Picture :
+            <input type="file" name="profile_pic" />
+          </label>
+        </div>
+
+        <div>
+          <label> Date of Birth : <input type="date" name="dob" /> </label>
+        </div>
+
+        <div>
+          <label
+            >Phone :
+            <input type="tel" name="mobile_num" maxlength="10" minlength="10" />
+          </label>
+        </div>
+
+        <div>
+          <label
+            >Age :
+            <input type="number" name="age" min="18" max="25" />
+          </label>
+        </div>
+
         <button type="submit">SUBMIT</button>
         <button type="reset">RESET</button>
       </form>

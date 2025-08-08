@@ -1,0 +1,22 @@
+#header {
+  background-color: orangered;
+}
+
+h1 {
+  /* text-size */
+  font-size: 40px;
+  /* text-color */
+  color: white;
+  /* text boldness */
+  font-weight: 900;
+  /* font family */
+  font-family: Arial;
+  /* letter spacing */
+  letter-spacing: 2px;
+  /* text shadow  : x , y , b, c*/
+  text-shadow: -2px 2px 0 #000;
+}
+
+p {
+  text-align: justify;
+}
