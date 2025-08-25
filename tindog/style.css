@@ -1,0 +1,64 @@
+* {
+  padding: 0; /* Removes default padding for all elements to ensure a clean starting point */
+  margin: 0; /* Removes default margins for all elements to ensure a clean starting point */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif; /* Sets the font stack for all heading elements, prioritizing Montserrat, then falling back to Arial or Helvetica */
+  margin-bottom: 1rem; /* Adds a 1rem margin below all heading elements for consistent spacing */
+}
+
+.level-2 {
+  font-size: 3rem; /* Sets the font size to 3rem for elements with class="level-2" */
+  color: tomato; /* Sets the text color to tomato (a shade of red) */
+  text-shadow: -2px 0 0 grey; /* Adds a grey text shadow, offset 2px to the left, with no vertical offset or blur */
+}
+
+.level-3 {
+  font-size: 2rem; /* Sets the font size to 2rem for elements with class="level-3" */
+  color: steelblue; /* Sets the text color to steelblue (a shade of blue) */
+  text-shadow: -2px 0 0 grey; /* Adds a grey text shadow, offset 2px to the left, with no vertical offset or blur */
+}
+
+.wrapper {
+  text-align: center; /* Centers the text content of elements with class="wrapper" */
+  padding: 4rem 8rem; /* Adds 4rem padding to top/bottom and 8rem to left/right for elements with class="wrapper" */
+}
+
+#features .row {
+  margin-top: 2rem; /* Adds a 2rem margin above elements with class="row" inside the element with id="features" */
+  display: flex; /* Enables flexbox layout for the row, making its children flex items */
+  justify-content: space-between; /* Distributes flex items horizontally with equal space between them */
+}
+
+#features .row .col {
+  border-radius: 10px; /* Rounds the corners of elements with class="col" inside the row with a 10px radius */
+  width: 30%; /* Sets the width of each column to 30% of its parent container */
+  padding: 1rem 2rem; /* Adds 1rem padding to top/bottom and 2rem to left/right for each column */
+}
+
+#features .row .col i {
+  font-size: 4rem; /* Sets the font size to 4rem for <i> elements (likely icons) inside columns */
+  color: steelblue; /* Sets the color of icons to steelblue */
+  margin-bottom: 1rem; /* Adds a 1rem margin below icons for spacing */
+}
+
+#features .row .col:hover {
+  box-shadow: 0 0 4px 0 grey; /* Applies a grey box shadow (4px blur, no spread) to columns on hover for a subtle effect */
+}
+
+#features .row .col:hover i {
+  color: tomato; /* Changes the icon color to tomato on hover */
+  transition: 0.3s ease-in-out; /* Smoothly transitions color, transform, and other properties over 0.3 seconds with an ease-in-out timing function */
+  transform: scale(1.1) rotate(-10deg); /* Scales the icon to 1.1x its size and rotates it 10 degrees counterclockwise on hover */
+}
+
+#features .row .col:hover h3 {
+  color: tomato; /* Changes the color of <h3> elements inside columns to tomato on hover */
+  transition: 0.3s ease-in-out; /* Smoothly transitions the color change over 0.3 seconds with an ease-in-out timing function */
+}
