@@ -5,8 +5,12 @@
   margin: 0; /* Removes default margins for all elements to ensure a clean starting point */
 }
 
+body {
+  font-family: sans-serif;
+}
 p {
   font-family: sans-serif;
+  color: grey;
 }
 
 h1,
@@ -20,10 +24,12 @@ h6 {
 }
 
 .btn {
+  border: none;
   padding: 12px 14px;
   border-color: transparent;
   border-radius: 5px;
   font-size: 1.1rem;
+  border-style: solid;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -33,6 +39,15 @@ h6 {
 }
 .btn-dark:hover {
   background-color: black;
+}
+.btn-outline-dark {
+  background-color: transparent;
+  color: #333;
+  border-color: #333;
+}
+.btn-outline-dark:hover {
+  background-color: black;
+  color: #fff;
 }
 .btn-light {
   background-color: whitesmoke;
@@ -49,7 +64,7 @@ h6 {
 }
 
 .level-3 {
-  font-size: 2rem; /* Sets the font size to 2rem for elements with class="level-3" */
+  font-size: 1.6rem; /* Sets the font size to 2rem for elements with class="level-3" */
   color: steelblue; /* Sets the text color to steelblue (a shade of blue) */
   text-shadow: -2px 0 0 grey; /* Adds a grey text shadow, offset 2px to the left, with no vertical offset or blur */
 }
@@ -149,6 +164,99 @@ h6 {
   transition: 0.3s ease-in-out; /* Smoothly transitions the color change over 0.3 seconds with an ease-in-out timing function */
 }
 
+#reviews {
+  color: #fff;
+  background-color: tomato;
+}
+#reviews .level-2 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+#reviews .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reviews img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-right: 1rem;
+}
+#brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: tomato;
+}
+#brands img {
+  width: 20%;
+}
+
+/* pricing */
+#pricing {
+  background: #f8f7f7;
+}
+
+#pricing .row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pricing .row .col {
+  width: 25%;
+}
+#pricing .row .col .card {
+  overflow: hidden;
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+}
+#pricing .row .col .card .card-header {
+  padding: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background-color: #ebebeb;
+  border-bottom: 0.5px solid #ccc;
+}
+#pricing .row .col .card .card-body {
+  background-color: #fff;
+  padding: 1rem;
+}
+#pricing .row .col .card .card-body button {
+  width: 100%;
+}
+#pricing .row .col .card .card-body .price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#pricing .row .col .card .card-body p {
+  margin-bottom: 1rem;
+}
+
+#download {
+  background-color: tomato;
+}
+#download .level-2 {
+  color: #fff;
+}
+
+footer a {
+  color: #333;
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+footer a:hover i {
+  color: tomato;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+footer p {
+  margin-top: 2rem;
+}
+
 /* media queries */
 
 /* 0-768 */
@@ -199,5 +307,24 @@ h6 {
   }
   #features .row .col .card {
     padding: 1rem;
+  }
+
+  #pricing .row {
+    flex-direction: column;
+  }
+  #pricing .row .col {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #pricing .row .col:last-child {
+    margin: 0;
+  }
+
+  #brands {
+    flex-direction: column;
+  }
+  #brands img {
+    margin-bottom: 2rem;
+    width: 80%;
   }
 }
